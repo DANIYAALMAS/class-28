@@ -31,7 +31,7 @@ function preload() {
   brokenBoatSpritesheet = loadImage("assets/boat/broken_boat.png");
   waterSplashSpritedata = loadJSON("assets/water_splash/water_splash.json");
   waterSplashSpritesheet = loadImage("assets/water_splash/water_splash.png");
-  backgroundMusic = loadSbackgroundImg = loadImage("./assets/background.gif");
+  backgroundMusic = loadSound("./assets/background_music.mp3");
   waterSound=loadSound("./assets/cannon_water.mp3");
   pirateLaughSound=loadSound("./assets/pirare_laugh.mp3");
   cannonExplosion=loadSound("./assets/cannon_explosion.mp3");
@@ -74,7 +74,7 @@ function draw() {
   
   if (!backgroundMusic.isPlaying()) {
     backgroundMusic.play();
-    backgroundMusic.setVolume(0.1);
+    backgroundMusic.setVolume(0.7);
   }
   
 
